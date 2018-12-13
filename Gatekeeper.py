@@ -21,9 +21,9 @@ def main():
     Connected = False
 
     broker_address = "m21.cloudmqtt.com"
-    port = 14655
-    user = "lvwvnzhs"
-    password = "nqpqsMe0M0Q2"
+    port = "insertportasInt"
+    user = "userfrommqtt"
+    password = "userpassword"
     client = mqttClient.Client("GPSBroker")
     client.username_pw_set(user, password=password)
     client.on_connect = on_connect
